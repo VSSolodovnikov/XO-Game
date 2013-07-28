@@ -4,9 +4,9 @@ public class Main {
         Game game = new Game();
         game.eraseField();
         field.showField();
-        game.setCellValue(2,2,'X');
+        Game.setCellValue(2,2,'X');
         field.showField();
-        game.setCellValue(1,2,'O');
+        Game.setCellValue(1,2,'O');
         field.showField();
         game.eraseField();
         field.showField();
