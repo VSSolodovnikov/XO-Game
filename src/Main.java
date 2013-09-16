@@ -1,14 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Field field = new Field();
-        Game game = new Game();
-        game.eraseField();
+
+        GameModel gameModel = new GameModel(12);
+
+        FieldView field = new FieldView(gameModel);
+
         field.showField();
-        Game.setCellValue(2,2,'X');
-        field.showField();
-        Game.setCellValue(1,2,'O');
-        field.showField();
-        game.eraseField();
-        field.showField();
+
     }
 }
